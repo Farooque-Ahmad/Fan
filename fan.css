@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.but button{
+       margin: 5px;
+       height: 40px;
+       width: 40px;
+       border: 0px solid green;
+       border-radius: 50%;
+       text-align: center;
+       cursor: pointer;
+}
+.but .on:active{
+    color: red;
+    scale: 0.9;
+}
+.but .off:active{
+    color: red;
+    scale: 0.9;
+}
+.but .fun:active{
+    color: rgb(223, 217, 217);
+    scale: 0.9;
+}
+
+ .on{
+    background-color: rgb(22, 223, 22);
+    transition: all 0.3s ease;
+}
+h3{
+    color: crimson;
+}
+.off{
+    background-color: red;
+
+}
+.fun{
+    background-color: rgb(199, 196, 196);
+}
+img{
+    padding: 50px;
+    border-radius: 50%;
+    animation: fananim linear infinite;
+    height: 250px;
+    width: 250px;
+}
+@keyframes fananim {
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
